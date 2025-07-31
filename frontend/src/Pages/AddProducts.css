@@ -1,0 +1,130 @@
+/* .formContainer {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 24px 32px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+
+.formGroup {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+button[type="submit"] {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+  background: #0056b3;
+} */
+
+
+
+/* AddProducts.css */
+
+.formContainer {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.formContainer h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.formGroup {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.formGroup input[type="text"],
+.formGroup input[type="number"],
+.formGroup input[type="file"] {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formGroup input[type="text"]:focus,
+.formGroup input[type="number"]:focus,
+.formGroup input[type="file"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .formContainer {
+    margin: 20px;
+    padding: 16px;
+  }
+
+  .formGroup input {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+
+  button[type="submit"] {
+    font-size: 0.95rem;
+    padding: 10px 0;
+  }
+}
