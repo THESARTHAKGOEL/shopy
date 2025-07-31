@@ -34,7 +34,7 @@ const AddProducts = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:3000/products/add",
+        "https://shopy-ug5z.onrender.com/products/add",
         formData,
         {
           headers: {

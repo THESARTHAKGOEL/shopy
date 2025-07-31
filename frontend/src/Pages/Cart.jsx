@@ -8,7 +8,7 @@ const UserProductDetail = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/products/${productId}`)
+      .get(`https://shopy-ug5z.onrender.com/products/${productId}`)
       .then((res) => setProduct(res.data.product));
   }, [productId]);
 

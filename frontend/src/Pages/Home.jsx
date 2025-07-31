@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import './Home.css';
+import "./Home.css";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -13,7 +13,7 @@ const Home = () => {
       navigate("/");
     }
 
-    axios.get("http://localhost:3000/").then((res) => {
+    axios.get("https://shopy-ug5z.onrender.com/").then((res) => {
       setProducts(res.data.products);
     });
   }, []);

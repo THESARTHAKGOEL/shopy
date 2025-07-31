@@ -1,15 +1,13 @@
-
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "./UserProductDetail.css";
 
-
 const UserHome = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/").then((res) => {
+    axios.get("https://shopy-ug5z.onrender.com/").then((res) => {
       setProducts(res.data.products);
     });
   }, []);
