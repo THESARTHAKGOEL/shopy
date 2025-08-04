@@ -26,9 +26,9 @@ router.post("/add", upload.single("image"), async (req, res) => {
     }
 
     const imagekit = new ImageKit({
-      publicKey: "public_M0PAK4NmC1d2995cVHB6hjiBgaE=",
-      privateKey: "private_KT7FkfaTOTLNy6lVG+V7iKE2ba4=",
-      urlEndpoint: "https://ik.imagekit.io/ls436o8px",
+      publicKey: process.env.IMAGEKIT_PUBLIC_KEY,
+      privateKey: process.env.IMAGEKIT_PRIVATE_KEY,
+      urlEndpoint: process.env.IMAGEKIT_URL_ENDPOINT,
     });
 
     console.log("Uploading image to ImageKit...");
@@ -115,9 +115,9 @@ router.post("/update/:id", upload.single("image"), async (req, res) => {
   const { title, description, category, price } = req.body;
 
   const imagekit = new ImageKit({
-    publicKey: "public_M0PAK4NmC1d2995cVHB6hjiBgaE=",
-    privateKey: "private_KT7FkfaTOTLNy6lVG+V7iKE2ba4=",
-    urlEndpoint: "https://ik.imagekit.io/ls436o8px",
+    publicKey: process.env.IMAGEKIT_PUBLIC_KEY,
+    privateKey: process.env.IMAGEKIT_PRIVATE_KEY,
+    urlEndpoint: process.env.IMAGEKIT_URL_ENDPOINT,
   });
 
   const result = await imagekit.upload({
