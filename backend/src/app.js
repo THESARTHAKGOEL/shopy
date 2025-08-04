@@ -10,7 +10,9 @@ const cors = require("cors");
 
 app.use(morgon("dev"));
 
-app.use(cors());
+app.use(cors((
+    origin: "https://shopy-frontend-t4vg.onrender.com/",
+)));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
